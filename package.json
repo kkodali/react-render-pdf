@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Create Single page pdf documents from React Components",
   "main": "lib/index.js",
-  "module": "umd/react-to-pdf.js",
-  "jsnext:main": "umd/react-to-pdf.js",
+  "module": "umd/react-render-pdf.js",
+  "jsnext:main": "umd/react-render-pdf.js",
   "files": [
     "umd",
     "lib"
@@ -28,20 +28,20 @@
     "build:watch": "echo 'build && watch the COMMONJS version of the package - for other version, run specific tasks' && npm run build:commonjs:watch",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel ./src/ReactToPdf.jsx --out-file ./lib/index.js",
     "build:commonjs:watch": "npm run build:commonjs -- --watch",
-    "build:umd": "cross-env BABEL_ENV=umd babel ./src/ReactToPdf.jsx --out-file ./umd/react-to-pdf.js",
-    "build:umd:min": "cross-env BABEL_ENV=umd babel --presets minify ./src/ReactToPdf.jsx --out-file ./umd/react-to-pdf.min.js",
+    "build:umd": "cross-env BABEL_ENV=umd babel ./src/ReactToPdf.jsx --out-file ./umd/react-render-pdf.js",
+    "build:umd:min": "cross-env BABEL_ENV=umd babel --presets minify ./src/ReactToPdf.jsx --out-file ./umd/react-render-pdf.min.js",
     "build:umd:watch": "npm run build:umd -- --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivmarcos/react-to-pdf.git"
+    "url": "git+https://github.com/kkodali/react-render-pdf.git"
   },
   "author": "Karthik Kodali",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ivmarcos/react-to-pdf/issues"
+    "url": "https://github.com/kkodali/react-render-pdf/issues"
   },
-  "homepage": "https://github.com/ivmarcos/react-to-pdf#readme",
+  "homepage": "https://github.com/kkodali/react-render-pdf#readme",
   "dependencies": {
     "html2canvas": "1.0.0-alpha.12",
     "jspdf": "^2.3.1"
